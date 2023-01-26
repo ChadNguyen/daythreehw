@@ -1,0 +1,111 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    height: 900px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "banner banner banner banner"
+    ".main main main ."
+    "img navOne navTwo navThree";
+}   
+
+header{
+    grid-area: header;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.banner-heading{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    grid-area: banner;
+}
+
+.banner{
+    grid-area: banner;
+    background-image: url(./images/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.showtime{
+    grid-area: main;
+    justify-content: center;
+}
+
+.main{
+    grid-area: main;
+    justify-content: center;
+    text-align: right;
+
+}
+
+#main-1{
+    margin-top: 10px;
+    
+}
+
+#main-2{
+    grid-area: main;
+    margin-top: 10px;
+    grid-column-start:
+}
+
+#main-3{
+    grid-area: main;
+    margin-top: 10px;
+    grid-column-start:
+}
+
+#main-4{
+    grid-area: main;
+    margin-top: 10px;
+    grid-column-start:
+}
+
+.btn{
+	font-size: 24px;
+	background-color: #f7b72e;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px;
+}
+
+.footerImg{
+    grid-area: img;
+}
+
+.navOne{
+    grid-area: navOne;
+}
+
+.navTwo{
+    grid-area: navTwo;
+}
+
+.navThree{
+    grid-area: navThree;
+}
+
+.topNav{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    padding-top: 10px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	margin-top: 30px;
+}
